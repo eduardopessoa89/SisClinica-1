@@ -3,27 +3,36 @@ package br.ufpb.dcx.poo.sisclinica.models;
 public class Medico{
 
     private String nome;
-    private String especialidade;
+    private int id;
+    /*private String especialidade;
     private int crm;
     private String cpf;
     private int salaDeAtendimento;
     private double salario;
     private boolean plantao;
     private final int nivelDeAcesso;
-
-    public Medico(String nome, String especialidade, int crm,
-            String cpf, int salaDeAtendimento, double salario, boolean plantao) {
+*/
+    public Medico(String nome, int id
+           /*String especialidade, String cpf, int salaDeAtendimento, double salario, boolean plantao*/) {
         this.setNome(nome);
-        this.setEspecialidade(especialidade);
+        this.setId(id);
+        /*this.setEspecialidade(especialidade);
         this.setCrm(crm);
         this.setCpf(cpf);
         this.setSalaDeAtendimento(salaDeAtendimento);
         this.setSalario(salario);
         this.setPlantao(plantao);
-        this.nivelDeAcesso = 1;
+        this.nivelDeAcesso = 1;*/
     }
 
-    public String getNome() {
+    public int getId() {
+    	return id;
+    }
+    public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNome() {
         return nome;
     }
 
@@ -31,7 +40,7 @@ public class Medico{
         this.nome = nome;
     }
 
-    public String getEspecialidade() {
+    /*public String getEspecialidade() {
         return especialidade;
     }
 
@@ -46,6 +55,7 @@ public class Medico{
     public void setCrm(int crm) {
         this.crm = crm;
     }
+
 
     public String getCpf() {
         return cpf;
@@ -81,6 +91,6 @@ public class Medico{
 
     public int getNivelDeAcesso() {
         return nivelDeAcesso;
-    }
+    }*/
 
 }
